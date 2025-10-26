@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VA1N | Стандарт. Без компромиссов.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero__background">
+        <img src="images/background.jpg" alt="VA1N Background" class="hero__bg-image">
+    </div>
+    <div class="hero__overlay"></div>
+    
+    <section class="hero">
+        <nav class="nav">
+            <div class="nav__logo">VA1N</div>
+            
+            <button class="nav__hamburger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav__menu">
+                <li><a href="#about">О бренде</a></li>
+                <li><a href="#collection">Коллекция</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="favorites-icon" id="favoritesButton">
+                    ❤️ <span class="favorites-count">0</span>
+                </button>
+                <button class="cart-icon" id="cartButton">
+                    🛒 <span class="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="hero__content">
+            <h1 class="hero__title" data-animate="fade-up">VA1N</h1>
+            <p class="hero__tagline" data-animate="fade-up" data-delay="200">Стандарт. Без компромиссов.</p>
+            <button class="cta-button" data-animate="fade-up" data-delay="400">Смотреть коллекцию</button>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="container">
+            <h2 data-animate="fade-up">ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+            <p class="section-subtitle">Бестселлеры, которые выбирают наши клиенты. Проверенное качество и стиль.</p>
+            
+            <div class="popular-carousel">
+                <div class="product-card" data-category="tops" data-name="футболка essential">
+                    <div class="product-image">
+                        <img src="images/c3e540efe0bd1602b339c43cdcb0629e.jpg" alt="Футболка Essential">
+                    </div>
+                    <h3>Футболка Essential</h3>
+                    <p>4900 ₸</p>
+                    <p class="product-description">100% хлопок, премиальное качество. Идеальная база для любого образа.</p>
+                    <div class="product-actions-overlay">
+                        <button class="add-to-cart-overlay">В корзину</button>
+                        <button class="add-to-favorite-overlay">❤️</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="outerwear" data-name="куртка bomber">
+                    <div class="product-image">
+                        <img src="images/094119c9729776292bb80e164267dd2e.jpg" alt="Куртка Bomber">
+                    </div>
+                    <h3>Куртка Bomber</h3>
+                    <p>12900 ₸</p>
+                    <p class="product-description">Нейлон, трикотажные манжеты. Классический авиаторский стиль.</p>
+                    <div class="product-actions-overlay">
+                        <button class="add-to-cart-overlay">В корзину</button>
+                        <button class="add-to-favorite-overlay">❤️</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bottoms" data-name="джинсы slim">
+                    <div class="product-image">
+                        <img src="images/8218c135786cc22dad168310eb894a31.jpg" alt="Джинсы Slim">
+                    </div>
+                    <h3>Джинсы Slim</h3>
+                    <p>9500 ₸</p>
+                    <p class="product-description">Эластичный деним, зауженный крой. Современный силуэт.</p>
+                    <div class="product-actions-overlay">
+                        <button class="add-to-cart-overlay">В корзину</button>
+                        <button class="add-to-favorite-overlay">❤️</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessories" data-name="кепка vintage">
+                    <div class="product-image">
+                        <img src="images/e2766b9b948431f0f5841db82d228f98.jpg" alt="Кепка Vintage">
+                    </div>
+                    <h3>Кепка Vintage</h3>
+                    <p>3200 ₸</p>
+                    <p class="product-description">Хлопок twill, регулируемая задняя часть. Ретро стиль.</p>
+                    <div class="product-actions-overlay">
+                        <button class="add-to-cart-overlay">В корзину</button>
+                        <button class="add-to-favorite-overlay">❤️</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-nav">
+                <button class="carousel-dot active"></button>
+                <button class="carousel-dot"></button>
+                <button class="carousel-dot"></button>
+                <button class="carousel-dot"></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text" data-animate="fade-left">
+                    <h2>ФИЛОСОФИЯ VA1N</h2>
+                    <p>VA1N — это не просто одежда. Это стандарт качества, минимализма и функциональности. Каждая вещь создается для тех, кто ценит чистоту линий, долговечность материалов и отсутствие лишнего.</p>
+                </div>
+                <div class="about__image" data-animate="fade-right">
+                    <div class="about__image-container">
+                        <img src="images/Airbrush-Image-Enhancer-1760880313545.jpg" alt="Философия бренда VA1N" class="about__img">
+                        <div class="about__image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="collection">
+        <div class="container">
+            <h2 data-animate="fade-up">КОЛЛЕКЦИЯ</h2>
+            
+            <div class="collection__filters" data-animate="fade-up">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Поиск по коллекции...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Все товары</button>
+                    <button class="filter-btn" data-category="tops">Верх</button>
+                    <button class="filter-btn" data-category="bottoms">Низ</button>
+                    <button class="filter-btn" data-category="outerwear">Верхняя одежда</button>
+                    <button class="filter-btn" data-category="accessories">Аксессуары</button>
+                </div>
+            </div>
+
+            <div class="horizontal-scroll-container">
+                <button class="scroll-btn scroll-btn--left" aria-label="Прокрутить влево">‹</button>
+                
+                <div class="horizontal-scroll-wrapper">
+                    <div class="products-grid" id="productsGrid">
+                        <div class="product-card" data-category="tops" data-name="футболка essential">
+                            <div class="product-image">
+                                <img src="images/c3e540efe0bd1602b339c43cdcb0629e.jpg" alt="Футболка Essential">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Футболка Essential</h4>
+                                        <p>100% хлопок, премиальное качество. Идеальная база для любого образа.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Футболка Essential</h3>
+                            <p>4900 ₸</p>
+                            <span class="product-category">Верх</span>
+                        </div>
+
+                        <div class="product-card" data-category="tops" data-name="лонгслив basic">
+                            <div class="product-image">
+                                <img src="images/2c074669ced2e5c15c6e8d91092eeb5f.jpg" alt="Лонгслив Basic">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Лонгслив Basic</h4>
+                                        <p>Плотный хлопок, универсальный крой. Для прохладных дней.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Лонгслив Basic</h3>
+                            <p>6200 ₸</p>
+                            <span class="product-category">Верх</span>
+                        </div>
+
+                        <div class="product-card" data-category="tops" data-name="худи classic">
+                            <div class="product-image">
+                                <img src="images/ed69659f19843451d6a1d220e2292d9c.jpg" alt="Худи Classic">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Худи Classic</h4>
+                                        <p>Флисовая подкладка, капюшон с регулировкой. Максимальный комфорт.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Худи Classic</h3>
+                            <p>8900 ₸</p>
+                            <span class="product-category">Верх</span>
+                        </div>
+
+                        <div class="product-card" data-category="bottoms" data-name="штаны cargo">
+                            <div class="product-image">
+                                <img src="images/e8febcb630378384e7b69b0dcf4c5d73.jpg" alt="Штаны Cargo">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Штаны Cargo</h4>
+                                        <p>Прочный хлопок, функциональные карманы. Уличный стиль.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Штаны Cargo</h3>
+                            <p>7200 ₸</p>
+                            <span class="product-category">Низ</span>
+                        </div>
+
+                        <div class="product-card" data-category="bottoms" data-name="джинсы slim">
+                            <div class="product-image">
+                                <img src="images/8218c135786cc22dad168310eb894a31.jpg" alt="Джинсы Slim">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Джинсы Slim</h4>
+                                        <p>Эластичный деним, зауженный крой. Современный силуэт.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Джинсы Slim</h3>
+                            <p>9500 ₸</p>
+                            <span class="product-category">Низ</span>
+                        </div>
+
+                        <div class="product-card" data-category="bottoms" data-name="шорты urban">
+                            <div class="product-image">
+                                <img src="images/f20244f3db6da73bd22be54e7719613d.jpg" alt="Шорты Urban">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Шорты Urban</h4>
+                                        <p>Легкая ткань, карман для мелочей. Идеальны для города.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Шорты Urban</h3>
+                            <p>5800 ₸</p>
+                            <span class="product-category">Низ</span>
+                        </div>
+
+                        <div class="product-card" data-category="outerwear" data-name="куртка bomber">
+                            <div class="product-image">
+                                <img src="images/094119c9729776292bb80e164267dd2e.jpg" alt="Куртка Bomber">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Куртка Bomber</h4>
+                                        <p>Нейлон, трикотажные манжеты. Классический авиаторский стиль.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Куртка Bomber</h3>
+                            <p>12900 ₸</p>
+                            <span class="product-category">Верхняя одежда</span>
+                        </div>
+
+                        <div class="product-card" data-category="outerwear" data-name="пальто wool">
+                            <div class="product-image">
+                                <img src="images/031afeeacb9b037d006f0a253ee8a1bf.jpg" alt="Пальто Wool">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Пальто Wool</h4>
+                                        <p>Шерсть 80%, кашемир 20%. Элегантность и тепло.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Пальто Wool</h3>
+                            <p>18900 ₸</p>
+                            <span class="product-category">Верхняя одежда</span>
+                        </div>
+
+                        <div class="product-card" data-category="accessories" data-name="кепка vintage">
+                            <div class="product-image">
+                                <img src="images/e2766b9b948431f0f5841db82d228f98.jpg" alt="Кепка Vintage">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Кепка Vintage</h4>
+                                        <p>Хлопок twill, регулируемая задняя часть. Ретро стиль.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Кепка Vintage</h3>
+                            <p>3200 ₸</p>
+                            <span class="product-category">Аксессуары</span>
+                        </div>
+
+                        <div class="product-card" data-category="accessories" data-name="ремень leather">
+                            <div class="product-image">
+                                <img src="images/64b0818ff49267aeb4fbf4efa200df3d.jpg" alt="Ремень Leather">
+                                <div class="product-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Ремень Leather</h4>
+                                        <p>Натуральная кожа, стальная пряжка. Долговечность и стиль.</p>
+                                        <div class="product-actions-overlay">
+                                            <button class="add-to-cart-overlay">В корзину</button>
+                                            <button class="add-to-favorite-overlay">❤️</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Ремень Leather</h3>
+                            <p>4500 ₸</p>
+                            <span class="product-category">Аксессуары</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="scroll-btn scroll-btn--right" aria-label="Прокрутить вправо">›</button>
+            </div>
+
+            <div class="no-results" id="noResults" style="display: none;">
+                <p>Товары не найдены. Попробуйте изменить поисковый запрос или фильтр.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-page" id="productPage" style="display: none;">
+        <div class="container">
+            <button class="back-to-collection" id="backToCollection">← Назад к коллекции</button>
+            
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="productMainImage" src="" alt="">
+                    </div>
+                    <div class="image-thumbnails"></div>
+                </div>
+                
+                <div class="product-info">
+                    <h1 id="productTitle">Название товара</h1>
+                    <p class="product-price" id="productPrice">0 ₸</p>
+                    <p class="product-category" id="productCategory">Категория</p>
+                    
+                    <div class="product-description">
+                        <p id="productDescription">Описание товара</p>
+                    </div>
+                    
+                    <div class="size-selector">
+                        <h4>Выберите размер:</h4>
+                        <div class="sizes" id="productSizes"></div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" id="addToCartDetail">Добавить в корзину</button>
+                        <button class="favorite-btn" id="addToFavorite">❤️</button>
+                    </div>
+                    
+                    <div class="product-features">
+                        <div class="feature">
+                            <span>🚚</span>
+                            <p>Бесплатная доставка от 15000 ₸</p>
+                        </div>
+                        <div class="feature">
+                            <span>↩️</span>
+                            <p>Возврат в течение 14 дней</p>
+                        </div>
+                        <div class="feature">
+                            <span>🎯</span>
+                            <p>Премиальное качество</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-animate="fade-up">СВЯЗАТЬСЯ С НАМИ</h2>
+            <div class="contact__content">
+                <div class="contact-info" data-animate="fade-left">
+                    <p>orders@vain.com</p>
+                    <p>+7 (747) 112 8661</p>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Telegram</a>
+                    </div>
+                </div>
+                <form class="contact-form" data-animate="fade-right">
+                    <input type="email" placeholder="Ваш email" required>
+                    <textarea placeholder="Сообщение" rows="5"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 VA1N. Все права защищены.</p>
+    </footer>
+    
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal__overlay">
+            <div class="cart-modal__content">
+                <div class="cart-modal__header">
+                    <h3>Корзина</h3>
+                    <button class="cart-modal__close" id="closeCart">&times;</button>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <div class="empty-cart">
+                        <p>Корзина пуста</p>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span id="cartTotal">0 ₸</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="continue-shopping">Продолжить покупки</button>
+                    <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="favorites-modal" id="favoritesModal">
+        <div class="favorites-modal__overlay">
+            <div class="favorites-modal__content">
+                <div class="favorites-modal__header">
+                    <h3>❤️ Избранное</h3>
+                    <button class="favorites-modal__close" id="closeFavorites">&times;</button>
+                </div>
+                <div class="favorites-items" id="favoritesItems">
+                    <div class="empty-favorites">
+                        <p>В избранном пока пусто</p>
+                        <p>Добавляйте товары, нажимая на сердечко ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-modal__overlay">
+            <div class="checkout-modal__content">
+                <button class="checkout-modal__close" id="closeCheckout">&times;</button>
+                <h3>Оформление заказа</h3>
+                <form class="checkout-form" id="checkoutForm">
+                    <div class="form-section">
+                        <h4>Контактная информация</h4>
+                        <input type="text" placeholder="Имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Адрес доставки</h4>
+                        <input type="text" placeholder="Город" required>
+                        <input type="text" placeholder="Улица, дом, квартира" required>
+                        <input type="text" placeholder="Индекс">
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Способ оплаты</h4>
+                        <div class="payment-methods">
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="card" checked>
+                                <span>Банковская карта</span>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="cash">
+                                <span>Наложенный платеж</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <h4>Ваш заказ</h4>
+                        <div id="orderSummary"></div>
+                        <div class="order-total">
+                            <strong>Итого: <span id="orderTotal">0 ₸</span></strong>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-order-btn">Подтвердить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-notification" id="cartNotification">
+        <span>Товар добавлен в корзину!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
